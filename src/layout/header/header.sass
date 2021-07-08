@@ -1,0 +1,68 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background-color: rgba(0, 0, 0, .5 )
+  z-index: 2
+
+.header__content
+  position: relative
+  display: flex
+  justify-content: flex-end
+
+.header__logo
+  position: absolute
+  left: 0
+  top: -10px
+
+.nav
+  align-self: flex-end
+
+.nav__list
+  display: flex
+
+.nav__item
+  margin-left: 33px
+
+  &:first-child
+    margin-left: 0
+
+  &--active
+    position: relative
+  
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 27px
+      height: 3px
+      background-color: #ff0036
+
+    &::after
+      content: ""
+      position: absolute
+      bottom: 0px
+      left: 0
+      right: 0
+      margin: auto
+      width: 27px
+      height: 3px
+      background-color: #ff0036
+
+.nav__link
+  display: block
+  padding: 22px 0
+  color: #a4a4a4
+  font-family: "Raleway"
+  font-size: 18px
+  letter-spacing: 0.07px
+  text-transform: uppercase
+  text-decoration: none
+
+  &--active
+    color: #ffffff
+

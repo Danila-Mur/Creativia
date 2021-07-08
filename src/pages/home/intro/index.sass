@@ -1,0 +1,87 @@
+.intro
+  
+.intro__content
+  position: relative
+  overflow: hidden
+
+.intro__slide
+  height: 100vh
+  background-image: url('../intro/intro-bg.jpg')
+  background-size: 100% 100%
+
+.intro__slide-content
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  max-width: 1022px
+  margin: 0 auto
+
+.intro__title
+  display: block
+  margin-bottom: 46px
+  color: #ffffff
+  font-family: 'Raleway'
+  font-size: 30px
+  font-weight: $font-weight-bold
+  text-align: center
+
+  &--red
+    color: #ff0036
+
+.intro__text
+  margin-bottom: 50px
+  color: #ffffff
+  font-size: 16px
+  line-height: 1.35
+  text-align: center
+
+.intro__buttons
+  text-align: center
+
+.intro__button
+  border: none
+  color: #ffffff
+  font-family: 'Raleway'
+  font-size: 20px
+  font-weight: $font-weight-medium
+  text-transform: uppercase
+  cursor: pointer
+
+.intro__button--features
+  margin-right: 30px
+  padding: 14px 35px
+  background-color: #ff0036
+
+.intro__button--psd
+  padding: 14px 39px
+  background-color: #131313
+
+.swiper-button-prev
+  position: absolute
+  width: 17px
+  height: 28px
+  left: 36px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 2
+  mask: url('./left-button.svg') no-repeat 100% 100%
+  background-color: #a4a4a4
+  cursor: pointer
+
+  &:hover
+    background-color: #ff0036
+
+.swiper-button-next
+  position: absolute
+  width: 17px
+  height: 28px
+  right: 36px
+  top: 50%
+  transform: translateY(-50%) rotate(180deg)
+  z-index: 2
+  mask: url('./left-button.svg') no-repeat 100% 100%
+  background-color: #a4a4a4
+  cursor: pointer
+  
+  &:hover
+    background-color: #ff0036
